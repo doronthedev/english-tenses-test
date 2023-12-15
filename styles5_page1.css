@@ -1,0 +1,204 @@
+body{
+    background-image: url("https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body:not(.header_nav){
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+.header_nav{
+    position:fixed ;
+    right: 0%;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+
+.h1_1{
+    text-align: center;
+    background-color: rgb(190, 176, 176);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    right: 0%;
+    left: 0%;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display:inline-block;
+    text-align: center;
+}
+
+.navbar a:hover:not(.active){
+    background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li{
+    float: left;
+    padding-left: 60px;
+
+}
+
+.navbar a.active{
+    text-decoration:underline;
+    text-decoration-color: rgb(161, 246, 77);
+    text-decoration-thickness: 8px;
+    font-weight: bold;
+}
+
+#instructions{
+    background-color: rgba(18, 19, 19, 0.499);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    color:white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main_home .form_button{
+    background-color: rgba(18, 19, 19, 0.499);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    color:white;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#main_home #enter_name{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.form_button{
+    background-color: rgba(18, 19, 19, 0.499);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    color:white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.form_button li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(172, 215, 215);
+    text-align:left;
+}
+
+.form_button li input{
+    display:inline-block;
+    font-size: 0.75em;
+    text-align: center;
+    border-radius: 10px ;
+    border: none;
+}
+
+.form_button li label{
+    color:rgb(255, 255, 255);
+    display:inline-block;
+}
+
+
+.form_button .submit_button{
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(141, 160, 154);
+    color:rgb(45, 49, 40);
+}
+
+.div_yes_no{
+    display:inline;
+}
+
+.h1_2, .instructions2{
+    background-color: rgba(18, 19, 19, 0.499);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    color:rgb(103, 235, 235);
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#main6 li input{
+    width: 800px;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+#main7 .form_button{
+    text-align: center;
+    line-height: 200%;
+}
+
+#main7 form{
+    text-align: left;
+}
+
+#main7 input, #main_home input{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.grade{
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.correct_wrong{
+    color:rgb(103, 235, 235);
+    font-weight: bold;
+}
+
+#main6 .form_button form{
+    text-align:left;
+
+}
+
+input:hover{
+    background-color: rgb(242, 235, 235);
+    border: none;
+    cursor:cell;
+}
+
+input:active{
+    background-color: rgba(255, 255, 255, 0.692);
+    box-shadow: none;
+    border: none;
+    cursor:cell;
+}
