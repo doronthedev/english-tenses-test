@@ -72,6 +72,7 @@ body:not(.header_nav){
     font-size: 1.5em;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 20px;
 }
 
 #main_home .form_button{
@@ -83,6 +84,7 @@ body:not(.header_nav){
     color:white;
     font-size: 1.5em;
     padding: 10px;
+    border-radius: 20px;
 }
 
 #main_home #enter_name{
@@ -103,6 +105,7 @@ body:not(.header_nav){
     font-size: 1.5em;
     padding: 10px;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 .form_button li{
@@ -150,6 +153,7 @@ body:not(.header_nav){
     padding: 10px;
     margin-top: 20px;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 #main6 li input{
