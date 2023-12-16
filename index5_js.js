@@ -2,7 +2,7 @@ function check_name() {
   let enter_name = document.getElementById("enter_name").value;
   document.getElementById(
     "instructions"
-  ).textContent = `Hello ${enter_name}, welcome to the quiz about tenses, the following tenses will appear in the quiz: Present simple, present progressive, past simple, past progressive and future. In addition, there is practice on passive and active.`;
+  ).textContent = `Hello ${enter_name}, welcome to the quiz about tenses, the following tenses will appear in the quiz: Present simple, present progressive, past simple, past progressive and future. In addition, there is practice on passive and active, (this quiz made by Nadav, Raz and Doron).`;
 }
 
 function check_answer(page, input_number, answers) {
