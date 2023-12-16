@@ -175,3 +175,117 @@ function check_answer_7(){
   document.getElementById("correct_7").textContent = `The number of correct answers: ${correct_sum}`;
   document.getElementById("wrong_7").textContent = `The number of wrong answers: ${num_of_questions - correct_sum}`;
 }
+
+const star_1 = document.getElementById("star_1")
+const star_2 = document.getElementById("star_2")
+const star_3 = document.getElementById("star_3")
+const star_4 = document.getElementById("star_4")
+const star_5 = document.getElementById("star_5")
+
+
+
+star_1.addEventListener("click", () => {
+    const color1 = getComputedStyle(star_1).color;
+    const color2 = getComputedStyle(star_2).color;
+
+    if (color1 === 'rgb(255, 204, 0)') {
+        if (color2 === 'rgb(255, 204, 0)'){
+            star_1.style.color = "#ffcc00";
+            star_2.style.color = "#ffcc0068";
+            star_3.style.color = "#ffcc0068";
+            star_4.style.color = "#ffcc0068";
+            star_5.style.color = "#ffcc0068";
+        } else {
+            star_1.style.color = "#ffcc0068";
+        }
+    } else {
+        star_1.style.color = "#ffcc00";
+    }
+});
+
+star_2.addEventListener("click", () => {
+    const color2 = getComputedStyle(star_2).color;
+    const color3 = getComputedStyle(star_3).color;
+
+    if (color2 === 'rgb(255, 204, 0)') {
+        if (color3 === 'rgb(255, 204, 0)'){
+            star_1.style.color = "#ffcc00";
+            star_2.style.color = "#ffcc00";
+            star_3.style.color = "#ffcc0068";
+            star_4.style.color = "#ffcc0068";
+            star_5.style.color = "#ffcc0068";
+        } else {
+            star_1.style.color = "#ffcc0068";
+            star_2.style.color = "#ffcc0068";
+        }
+    } else {
+        star_1.style.color = "#ffcc00";
+        star_2.style.color = "#ffcc00";
+    }
+});
+
+star_3.addEventListener("click", () => {
+    const color3 = getComputedStyle(star_3).color;
+    const color4 = getComputedStyle(star_4).color;
+
+    if (color3 === 'rgb(255, 204, 0)') {
+        if (color4 === 'rgb(255, 204, 0)'){
+            star_1.style.color = "#ffcc00";
+            star_2.style.color = "#ffcc00";
+            star_3.style.color = "#ffcc00";
+            star_4.style.color = "#ffcc0068";
+            star_5.style.color = "#ffcc0068";
+        } else {
+            star_1.style.color = "#ffcc0068";
+            star_2.style.color = "#ffcc0068";
+            star_3.style.color = "#ffcc0068";
+        }
+    } else {
+        star_1.style.color = "#ffcc00";
+        star_2.style.color = "#ffcc00";
+        star_3.style.color = "#ffcc00";
+    }
+});
+
+star_4.addEventListener("click", () => {
+    const color4 = getComputedStyle(star_4).color;
+    const color5 = getComputedStyle(star_5).color;
+
+    if (color4 === 'rgb(255, 204, 0)') {
+        if (color5 === 'rgb(255, 204, 0)'){
+            star_1.style.color = "#ffcc00";
+            star_2.style.color = "#ffcc00";
+            star_3.style.color = "#ffcc00";
+            star_4.style.color = "#ffcc00";
+            star_5.style.color = "#ffcc0068";
+        } else {
+            star_1.style.color = "#ffcc0068";
+            star_2.style.color = "#ffcc0068";
+            star_3.style.color = "#ffcc0068";
+            star_4.style.color = "#ffcc0068";
+        }
+    } else {
+        star_1.style.color = "#ffcc00";
+        star_2.style.color = "#ffcc00";
+        star_3.style.color = "#ffcc00";
+        star_4.style.color = "#ffcc00";
+    }
+});
+
+star_5.addEventListener("click", () => {
+    const color5 = getComputedStyle(star_5).color;
+
+    if (color5 === 'rgb(255, 204, 0)') {
+        star_1.style.color = "#ffcc0068";
+        star_2.style.color = "#ffcc0068";
+        star_3.style.color = "#ffcc0068";
+        star_4.style.color = "#ffcc0068";
+        star_5.style.color = "#ffcc0068";
+    } else {
+        star_1.style.color = "#ffcc00";
+        star_2.style.color = "#ffcc00";
+        star_3.style.color = "#ffcc00";
+        star_4.style.color = "#ffcc00";
+        star_5.style.color = "#ffcc00";
+    }
+});
