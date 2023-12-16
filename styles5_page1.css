@@ -2,6 +2,7 @@ body{
     background-image: url("https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg");
     background-size: cover;
     background-attachment: fixed;
+    user-select: none;
 }
 
 body:not(.header_nav){
@@ -201,4 +202,26 @@ input:active{
     box-shadow: none;
     border: none;
     cursor:cell;
+}
+
+.stars{
+    display: inline-block;
+    color: #ffcc0068;
+    margin: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+#stars_review{
+    background-color: rgba(18, 19, 19, 0.499);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color:white;
+    font-size: 4em;
+    position: fixed;
+    bottom: 0px;
+    user-select: none;
+
 }
