@@ -1,8 +1,6 @@
 function check_name() {
   let enter_name = document.getElementById("enter_name").value;
-  document.getElementById(
-    "instructions"
-  ).textContent = `Hello ${enter_name}, welcome to the quiz about tenses, the following tenses will appear in the quiz: Present simple, present progressive, past simple, past progressive and future. In addition, there is practice on passive and active, (this quiz made by Nadav, Raz and Doron).`;
+  document.getElementById("instructions").textContent = `Hello ${enter_name}, welcome to the quiz about tenses, the following tenses will appear in the quiz: Present simple, present progressive, past simple, past progressive and future. In addition, there is practice on passive and active, (this quiz made by Nadav, Raz and Doron).`;
 }
 
 function check_answer(page, input_number, answers) {
@@ -82,7 +80,7 @@ function check_answer_4() {
   let num_of_questions = 8;
 
   correct_sum += check_answer("4", "01", ["is eating"]) ? 1 : 0;
-  correct_sum += check_answer("4", "02", ["is not eating", "isn't eating"]) ? 1 : 0;
+  correct_sum += check_answer("4", "02", ["are not running", "aren't running"]) ? 1 : 0;
   correct_sum += check_answer("4", "03", ["Is"]) ? 1 : 0;
   correct_sum += check_answer("4", "13", ["holding"]) ? 1 : 0;
   correct_sum += check_answer("4", "04", ["is"]) ? 1 : 0;
@@ -119,20 +117,20 @@ function check_answer_6() {
 
   correct_sum += check_answer("6", "01", ["The delicious lasagna will be eaten by Dan.",
                                           "The delicious lasagna will be eaten by Dan tomorrow.", 
-                                          "The delicious lasagna will be eaten by Dan tomorrow."]) ? 1 : 0;
+                                          "Tomorrow, the delicious lasagna will be eaten by Dan."]) ? 1 : 0;
   correct_sum += check_answer("6", "02", ["Every week, Yosi's parents are hugged by Yosi.",
                                           "Yosi's parents are hugged by Yosi every week."]) ? 1 : 0;
   correct_sum += check_answer("6", "03", ["The exams are being graded by the English teacher now."]) ? 1 : 0;
   correct_sum += check_answer("6", "04", ["Idan and his friends are eating the birthday cake."]) ? 1 : 0;
   correct_sum += check_answer("6", "05", ["The evil bee stung me yesterday."]) ? 1 : 0;
-  correct_sum += check_answer("6", "06", ["Dani ate all the chocolates."]) ? 1 : 0;
+  correct_sum += check_answer("6", "06", ["Dani ate all the chocolate."]) ? 1 : 0;
   correct_sum += check_answer("6", "07", ["John was driving too fast and the policeman stopped his car."]) ? 1 : 0;
-  correct_sum += check_answer("6", "08", ["We were late for the show so the people took the seats all."]) ? 1 : 0;
-  correct_sum += check_answer("6", "09", ["This chef made this chocolate with only three ingredients"]) ? 1 : 0;
+  correct_sum += check_answer("6", "08", ["We were late for the show so the people took all the seats ."]) ? 1 : 0;
+  correct_sum += check_answer("6", "09", ["This chef made this chocolate with only three ingredients."]) ? 1 : 0;
   correct_sum += check_answer("6", "010",["Because of covid, the government closed most of the stores.",
-                                          "The government closed most of the stores, because of covid", 
+                                          "The government closed most of the stores, because of covid.", 
                                           "Because of covid the government closed most of the stores.",
-                                          "The government closed most of the stores because of covid"]) ? 1 : 0;
+                                          "The government closed most of the stores because of covid."]) ? 1 : 0;
 
   document.getElementById("grade_6").textContent = `Your grade: ${((correct_sum * 100) / num_of_questions).toFixed(1)}`;
   document.getElementById("correct_6").textContent = `The number of correct answers: ${correct_sum}`;
