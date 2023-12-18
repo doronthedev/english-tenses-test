@@ -35,6 +35,8 @@ body:not(.header_nav){
     overflow: hidden;
     right: 0%;
     left: 0%;
+    justify-content: center;
+    display: flex;
 }
 
 .navbar a{
