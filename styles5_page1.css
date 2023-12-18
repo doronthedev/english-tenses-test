@@ -38,6 +38,7 @@ body:not(.header_nav){
     justify-content: center;
     align-items: center;
     display: flex;
+    text-align: center;
 }
 
 .navbar a{
