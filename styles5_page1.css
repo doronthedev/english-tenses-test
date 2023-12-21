@@ -39,7 +39,7 @@ body:not(.header_nav){
     align-items: center;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navbar a{
