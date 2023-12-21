@@ -37,8 +37,9 @@ body:not(.header_nav){
     left: 0%;
     justify-content: center;
     align-items: center;
-    display: flex;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar a{
@@ -55,8 +56,6 @@ body:not(.header_nav){
 
 .navbar li{
     float: left;
-    padding-left: 30px;
-
 }
 
 .navbar a.active{
