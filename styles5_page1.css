@@ -140,6 +140,11 @@ body:not(.header_nav){
     color:rgb(45, 49, 40);
 }
 
+.submit_button:hover{
+    background-color: rgba(141, 160, 154, 0.578);
+    cursor: pointer;
+}
+    
 .div_yes_no{
     display:inline;
 }
